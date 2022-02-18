@@ -46,6 +46,17 @@ body {
     justify-content: space-around;
 }
 
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-around;
+}
+
+.sign-up * {
+    margin: 2%;
+}
+
 #sign-up-btn {
     padding: 5%;
 }
@@ -60,6 +71,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 
 h1 {
     padding: 2%;
