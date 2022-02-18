@@ -15,13 +15,36 @@ const app = initializeApp(firebaseConfig);
 const email = document.querySelector("#email-input")
 const password = document.querySelector("#password-input")
 const signIn = document.querySelector("#sign-in-btn")
+const signUp = document.querySelector("#sign-in-btn")
+const emailCreate = document.querySelector("#email-input-create")
+const passwordCreate = document.querySelector("#password-input-create")
+const emailVerify = document.querySelector("")
 
+
+export function create() {
+    signUp.addEventListener("click", () => {
+        createUser(email, password)
+    })
+}
 
 export function sign() {
     signIn.addEventListener("click", () => {
     login(email.value, password.value)
     })
 }
+
+function createUser(email, password) {
+    const auth = getAuth();
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        const user = userCredential.user;
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+      });
+}
+
 
 
 function login(email, password) {
