@@ -19,7 +19,7 @@ const signIn = document.querySelector("#sign-in-btn")
 
 export function sign() {
     signIn.addEventListener("click", () => {
-    login(email, password)
+    login(email.value, password.value)
     })
 }
 
@@ -29,6 +29,7 @@ function login(email, password) {
     signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
     const user = userCredential.user;
+    console.log(user)
     })
     .catch((error) => {
     const errorCode = error.code;

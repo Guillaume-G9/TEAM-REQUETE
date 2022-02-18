@@ -1,4 +1,4 @@
-import {sign} from "..firebase_lib/"
+import {sign} from "../firebase_lib.js"
 
 
 sign();
