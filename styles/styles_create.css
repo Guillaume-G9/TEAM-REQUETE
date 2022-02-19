@@ -1,110 +1,132 @@
 :root {
-    --main-blue-color:  rgba(39, 21, 202, 0.411);
-    --main-purple-color:  rgba(128, 0, 128, 0.274);
+    --main-blue-color: rgba(39, 21, 202, 0.411);
+    --main-purple-color: rgba(128, 0, 128, 0.274);
     --main-grey-color: rgba(128, 128, 128, 0.644);
-  }
-  
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
-  
-  * {
-      margin : 0;
-      padding : 0;
-      font-family: 'Poppins', sans-serif;
-  }
-  
-  a {
-      color: purple;
-      text-decoration: none;
-  }
-  
-  body {
-      color: white;
-      background: url('../images/minimalistic_blur_gaussian_blur_1600x900.jpg') no-repeat center;
-      background-size: cover;
-      height: 100vh;
-      width: 100vw;
-      display: flex;
-      justify-content:center;
-      align-items:center;
-  }
-  
-  .container {
-      background-color: var(--main-purple-color);
-      padding: 5%;
-      border-radius: 15px;
-      width: 80%;
-      height: 40%;
-      display: flex;
-      margin-left: 5%;
-      overflow: auto;
-  }
-  
-  .sign-in {
-      display: flex;
-      flex-direction: column;
-      height: 30vh;
-      justify-content: space-around;
-  }
-  
-  .sign-up {
-      display: flex;
-      flex-direction: column;
-      height: 50vh;
-      justify-content: space-around;
-  }
-  
+}
 
-  #sign-up-btn {
-      padding: 5%;
-      margin-bottom: -3%;
-      margin-top: 5%;
-  }
-  
-  .card2 {
-      height: 55vh;;
-      width: 50%;
-      background-color: var(--main-blue-color);
-      margin: 0% 8% 0 0;
-      border-radius: 15px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  
-  
-  
-  h1 {
-      padding: 2%;
-  }
-  
-  .card2 img {
-      width: 100%;
-  }
-  
-  .separator {
-      background-color: var(--main-grey-color);
-      height: 2px;
-      width: 100%;
-      border-radius: 10px;
-      
-  }
-  
-  .text {
-      display: flex;
-      flex-direction: column;
-      gap: 8%;
-      width: 40%;
-      margin-left: 5%;
-      /* margin-right: 5%; */
-  }
-  
-  input, button {
-      border-radius: 30px;
-      padding: 2%;
-      border: none;
-  }
-  
-  button {
-      background-color: var(--main-blue-color);
-      color: white;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: purple;
+    text-decoration: none;
+}
+
+body {
+    color: white;
+    background: url('../images/minimalistic_blur_gaussian_blur_1600x900.jpg') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--main-purple-color);
+    padding: 5%;
+    border-radius: 15px;
+    width: 80%;
+    height: 40%;
+    display: flex;
+    margin-left: 5%;
+    overflow: auto;
+}
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    justify-content: space-around;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-between;
+}
+
+.sign-up label {
+    margin-bottom: -10%;
+}
+
+#wrong-email {
+    position: absolute;
+    display: none;
+    color: red;
+    background-color: white;
+    margin-top: 65%;
+}
+
+#wrong-password {
+    position: absolute;
+    display: none;
+    color: red;
+    background-color: white;
+    margin-top: 90%;
+}
+
+#sign-up-btn {
+    padding: 5%;
+    margin-bottom: -6%;
+    margin-top: 5%;
+}
+
+.card2 {
+    height: 55vh;
+    ;
+    width: 50%;
+    background-color: var(--main-blue-color);
+    margin: 0% 8% 0 0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+h1 {
+    padding: 2%;
+}
+
+.card2 img {
+    width: 100%;
+}
+
+.separator {
+    background-color: var(--main-grey-color);
+    height: 2px;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+    width: 40%;
+    margin-left: 5%;
+    /* margin-right: 5%; */
+}
+
+input,
+button {
+    border-radius: 30px;
+    padding: 2%;
+    border: none;
+}
+
+button {
+    background-color: var(--main-blue-color);
+    color: white;
+}

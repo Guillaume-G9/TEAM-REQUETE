@@ -19,21 +19,23 @@
                 <h1>Inscription</h1>
                 <div class="sign-up">
                     <label for="name">Votre prénom</label>
-                    <input type="name" placeholder="Prénom">
+                    <input type="name" placeholder="Prénom" required>
                     <label for="fname">Votre nom de famille</label>
-                    <input type="fname" placeholder="Nom de famille">
+                    <input type="fname" placeholder="Nom de famille" required>
+                    <p id="wrong-email"></p>
                     <label for="email">Veuillez entrer votre adresse e-mail</label>
-                    <input placeholder="Confirmez votre adresse e-mail" type="email">
-                    <label for="confirm e-mail">Veuillez confirmer votre adresse mail</label>
-                    <input id="email-input-create" placeholder="Adresse mail" type="email">
+                    <input placeholder="Votre adresse e-mail" type="email" id="email-input-create" required>
                     <label for="password">Veuillez entrer un mot de passe</label>
-                    <input id="password-input-create" type="password" placeholder="Mot de passe">
+                    <input id="password-input-create" type="password" placeholder="Mot de passe" required>
+                    <p id="wrong-password"></p>
+                    <label for="confirm password">Veuillez confirmer votre mot de passe</label>
+                    <input id="password-verify" placeholder="Confirmer mot de passe" type="password" required>
                     <button id="sign-up-btn">S'inscrire</button>
                 </div>
             </div>
         </div>
     </main>
     <script type="module" src="../firebase_lib.js"></script>
-    <script src="./sign-up.js"></script>
+    <script type="module" src="./sign-up.js"></script>
 </body>
 </html>
