@@ -27,7 +27,7 @@ const passwordCreate = document.querySelector("#password-input-create")
 const passwordVerify = document.querySelector("#password-verify")
 const wrongMail = document.querySelector("#wrong-email")
 const wrongPass = document.querySelector("#wrong-password")
-
+const passDoesNotMatch = document.querySelector("#match-password")
 
 export function create() {
   signUp.addEventListener("click", () => {
@@ -47,6 +47,18 @@ export function sign() {
   })
 }
 
+export function verify() {
+  document.querySelector("#password-verify").addEventListener("keyup", (e) => {
+    if (passwordVerify.value != passwordCreate.value) {
+      passDoesNotMatch.textContent = `Les mots de passes ne correspondent pas`;
+      passDoesNotMatch.styles.display = "inline";
+    } else {
+      passDoesNotMatch.textContent = ""
+      passDoesNotMatch.styles.display = "none"
+    }
+  })
+}
+
 function createUser(emailCreate, passwordCreate) {
   const auth = getAuth();
   createUserWithEmailAndPassword(auth, emailCreate, passwordCreate)
@@ -59,8 +71,6 @@ function createUser(emailCreate, passwordCreate) {
       const errorMessage = error.message;
     });
 }
-
-
 
 function login(email, password) {
   const auth = getAuth();

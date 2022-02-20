@@ -53,24 +53,31 @@ body {
     justify-content: space-between;
 }
 
-.sign-up label {
-    margin-bottom: -10%;
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space between;
 }
 
 #wrong-email {
-    position: absolute;
     display: none;
     color: red;
     background-color: white;
-    margin-top: 65%;
+    margin-top: 1%;
 }
 
 #wrong-password {
-    position: absolute;
     display: none;
     color: red;
     background-color: white;
-    margin-top: 90%;
+    margin-top: 1%;
+}
+
+#match-password {
+    color: red;
+    background-color: white;
+    margin-top: 1%;
 }
 
 #sign-up-btn {

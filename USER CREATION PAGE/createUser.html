@@ -18,18 +18,29 @@
             <div class="text">
                 <h1>Inscription</h1>
                 <div class="sign-up">
-                    <label for="name">Votre prénom</label>
-                    <input type="name" placeholder="Prénom" required>
-                    <label for="fname">Votre nom de famille</label>
-                    <input type="fname" placeholder="Nom de famille" required>
-                    <p id="wrong-email"></p>
-                    <label for="email">Veuillez entrer votre adresse e-mail</label>
-                    <input placeholder="Votre adresse e-mail" type="email" id="email-input-create" required>
-                    <label for="password">Veuillez entrer un mot de passe</label>
-                    <input id="password-input-create" type="password" placeholder="Mot de passe" required>
-                    <p id="wrong-password"></p>
-                    <label for="confirm password">Veuillez confirmer votre mot de passe</label>
-                    <input id="password-verify" placeholder="Confirmer mot de passe" type="password" required>
+                    <div class="text-box">
+                        <label for="name">Votre prénom</label>
+                        <input type="name" placeholder="Prénom" required>
+                    </div>
+                    <div class="text-box">
+                        <label for="fname">Votre nom de famille</label>
+                        <input type="fname" placeholder="Nom de famille" required>
+                    </div>
+                    <div class="text-box">
+                        <label for="email">Veuillez entrer votre adresse e-mail</label>
+                        <input placeholder="Votre adresse e-mail" type="email" id="email-input-create" required>
+                        <p id="wrong-email"></p>
+                    </div>
+                    <div class="text-box">
+                        <label for="password">Veuillez entrer un mot de passe</label>
+                        <input id="password-input-create" type="password" placeholder="Mot de passe" required>
+                        <p id="wrong-password"></p>
+                    </div>
+                    <div class="text-box">
+                        <label for="confirm password">Veuillez confirmer votre mot de passe</label>
+                        <input id="password-verify" placeholder="Confirmer mot de passe" type="password" required>
+                        <p id="match-password"></p>
+                    </div>
                     <button id="sign-up-btn">S'inscrire</button>
                 </div>
             </div>
