@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles_main.css">
     <title>MAIN PAGE</title>
     <link rel="icon" href="../images/logo.png">
 </head>
+
 <body>
+    <header>
+        <img src="../images/logo.png" alt="logo">
+        <ul>
+            <li>
+                <img class="user-logo"src="../images/User_fill.png" alt="user logo">
+                <p>Connecté</p>
+            </li>
+        </ul>
+    </header>
     <main>
-        <div class="container">
-            <div class="cross"></div>
-            <div class="card">
-                <img src="../images/logo.png" alt="purple logo">
-            </div>
-            <div class="text">
-                <h1>Connexion</h1>
-                <input id="email-input" placeholder="Adresse mail" type="email">
-                <input id="password-input" type="password" placeholder="Mot de passe">
-                <button id="sign-in-btn">Se connecter</button>
-                <div class="separator"></div>
-                <p>Pas de compte ? <a href="#">S'inscrire</a></p>
-                <p>Mot de passe ? <a href="#">Cliques ici</a></p>
-            </div>
+        <div class="main-text">
+            <p>PROJET <br> PRINCIPAL</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Est a consectetur eveniet explicabo voluptates rem nesciunt quisquam</p>
         </div>
     </main>
+    <footer>
+        <div class="text-box">
+            <p>COMMENCER</p>
+        </div>
+    </footer>
     <script type="module" src="../firebase_lib.js"></script>
     <script type="module" src="./login.js"></script>
 </body>
+
 </html>
